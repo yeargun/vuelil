@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-10T13:47:13Z",
+  "name": "vuelil",
+  "compiler": {
+    "commit": "63c2896a71e60cbcca7870fe979f9d6ecaff3452",
+    "sha256": "2319462ef7d858c8e2a5a767260aa4f80d325e0045afa0cc86cc122d1299b059",
+    "profile": "release",
+    "dirty": false
+  },
+  "upstream": {
+    "package": "vue",
+    "version": "3.5.42"
+  },
+  "scope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+  "compatibility": "The full ESM build is unavailable.",
+  "tests": null,
+  "buildComplete": false,
+  "machine": {
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "logicalCpus": 16,
+    "memoryBytes": 33648435200,
+    "os": "Ubuntu 24.04.4 LTS",
+    "node": "v24.11.1",
+    "rayonThreads": 16,
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7"
+  },
+  "build": {
+    "compilerSeconds": null,
+    "packageSeconds": 96.92631187899997,
+    "originalSeconds": 0.699557759,
+    "packageScope": "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility; 4 successful compiler invocations plus package generation.",
+    "originalScope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+    "protocol": "Same shared worker for both lanes; one fresh LilScript package build; median of three sequential upstream ESM builds (PlayCanvas records one native reference build). Outside compiler jobs were observed in the pool, so contention is not excluded. Dependencies, tests and compression measurement are outside these build times."
+  },
+  "esm": {
+    "lilscript": null,
+    "original": {
+      "raw": 123512,
+      "gzip9": 46451,
+      "brotli11": 41531,
+      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000",
+      "file": "./esm-comparison/original.js"
+    }
+  }
+}

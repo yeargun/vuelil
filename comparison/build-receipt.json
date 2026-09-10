@@ -377,5 +377,11 @@
   ],
   "publicationPolicy": "Retain previous public distribution; publish the diagnostic audit",
   "publicationBase": "472d660aae51b000efc30aa3317acd20d43a2c9e",
-  "publicationSourceFingerprint": "5c11d575890e5ffc86989a5f63f810efa40a2611f6d513bc28658c385f5100a4"
+  "publicationSourceFingerprint": "5c11d575890e5ffc86989a5f63f810efa40a2611f6d513bc28658c385f5100a4",
+  "comparisonArtifacts": [
+    {
+      "path": "web/esm-comparison/original.js",
+      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000"
+    }
+  ]
 }

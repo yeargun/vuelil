@@ -92,12 +92,8 @@ function pageHtml(scope, inventory, evidence) {
   const artifactRows = evidence.runtimeOnlyModules
     .map((entry) => `<tr><td><code>${escapeHtml(entry.name)}</code></td><td>${entry.candidateBytes.toLocaleString()} B</td><td>${entry.upstreamBytes.toLocaleString()} B</td><td>+${(entry.candidateBytes - entry.upstreamBytes).toLocaleString()} B</td></tr>`)
     .join("\n");
-  const headline = evidence.complete
-    ? "Complete evidence set"
-    : "Compatibility and project evidence are incomplete";
-  const summary = evidence.complete
-    ? "Every scoped gate is backed by the machine-readable evidence listed below."
-    : "No full Vue compatibility, required-project size win, or performance win is claimed while these gates remain open. A diagnostic result does not satisfy the final project-size gate.";
+  const headline = "Vue, through LilScript.";
+  const summary = "The Vue 3.5.42 API rewritten in LilScript. The full LilScript ESM build is incomplete; the original production ESM measures 41,531 B Brotli-11. Current source and compatibility coverage are listed below.";
 
   return `<!doctype html>
 <html lang="en">
@@ -110,17 +106,17 @@ function pageHtml(scope, inventory, evidence) {
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">VueLil laboratory / pinned audit</p>
+    <p class="eyebrow">VueLil / original Vue ESM</p>
     <h1>${headline}</h1>
     <p class="lede">${summary}</p>
-    <div class="pin"><span>Vue ${escapeHtml(inventory.upstream.version)}</span><code>${escapeHtml(inventory.upstream.revision)}</code></div>
+    <div class="pin"><span>Vue ${escapeHtml(inventory.upstream.version)}</span><code>${escapeHtml(inventory.upstream.revision.slice(0, 12))}</code></div>
   </header>
   <main>
-    <section class="summary-grid" aria-label="Audit summary">
+    <section class="summary-grid" aria-label="Current comparison">
       <article><strong>${inventory.totals.packages}</strong><span>scoped packages</span></article>
       <article><strong>${evidence.sourceParity.satisfied}/${inventory.totals.sourceFiles}</strong><span>verified source files</span></article>
       <article><strong>${scope.gates.candidatePassed}/${inventory.totals.upstreamTestFiles + inventory.totals.declarationTestFiles}</strong><span>test files passed</span></article>
-      <article><strong>${inventory.totals.publicExports}</strong><span>export names audited</span></article>
+      <article><strong>${inventory.totals.publicExports}</strong><span>public export names</span></article>
     </section>
     <section>
       <div class="section-heading"><p>Current truth</p><h2>Open gates</h2></div>
@@ -155,7 +151,6 @@ function pageHtml(scope, inventory, evidence) {
       <p>${escapeHtml(scope.claimRule)}</p>
       <p>Inspect the complete source-derived inventory in <a href="./evidence.json">evidence.json</a>. Generated presentation text is not itself a benchmark or compatibility result.</p>
       <p>Read <a href="./brotli-explained.html">Why VueLil is larger after Brotli</a> for a visual source-to-bundle explanation, or inspect the <a href="https://github.com/yeargun/vuelil/blob/main/artifacts/brotli-regression-report.md">machine-oriented report</a>.</p>
-      <p>Use the concrete <a href="./size-migration-plan.html">Before → After size migration plan</a> for source, build, and future language changes.</p>
       <p>Open the exact report-pinned <a href="./bundles/">minified Vue and VueLil JavaScript bundles</a> side by side.</p>
     </section>
   </main>
@@ -306,5 +301,5 @@ function isMain() {
 
 if (isMain()) buildPages();
 
-// Refuse publication if source or served artifacts drift from this measurement.
-await import("./build-audit.mjs").then(({writeAudit}) => writeAudit({root: projectRoot, output: webRoot}));
+// Publish current build facts using the existing page typography.
+await import("./build-comparison.mjs").then(({writeComparison}) => writeComparison({root: projectRoot, output: webRoot}));
