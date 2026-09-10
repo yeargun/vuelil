@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "name": "vuelil",
+  "measuredAt": "2026-09-10T13:47:13Z",
+  "status": "blocked",
+  "buildPassed": false,
+  "summary": "The newly measured artifact remains diagnostic until its behavior gate is satisfied; the previously published runtime is retained.",
+  "sourceCommit": "472d660aae51b000efc30aa3317acd20d43a2c9e",
+  "previousPublicCommit": "472d660aae51b000efc30aa3317acd20d43a2c9e",
+  "compiler": {
+    "commit": "63c2896a71e60cbcca7870fe979f9d6ecaff3452",
+    "sha256": "2319462ef7d858c8e2a5a767260aa4f80d325e0045afa0cc86cc122d1299b059",
+    "profile": "release",
+    "dirty": false
+  },
+  "machine": {
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "logicalCpus": 16,
+    "affinityCpus": 16,
+    "memoryBytes": 33648435200,
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.17.0-1022-azure",
+    "architecture": "x86_64",
+    "node": "v24.11.1",
+    "rayonThreads": 16,
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7",
+    "parallelPortBuildsOnMachine": 1,
+    "loadAtStart": [
+      0.16259765625,
+      0.06396484375,
+      0.029296875
+    ],
+    "concurrencyNote": "The audit scheduled one port per worker, but this is a shared pool. Outside compiler jobs were observed during the run; timings are contextual wall times, not controlled speedup benchmarks."
+  },
+  "upstream": {
+    "name": "vuelil",
+    "package": "vue",
+    "pinned": "3.5.42",
+    "latest": "3.5.42",
+    "source": "https://www.npmjs.com/package/vue"
+  },
+  "comparisonScope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline Sizes use canonical zlib 1.3.1 gzip-9 and Google Brotli 1.1.0 quality 11. This is diagnostic: full-library feature/API equivalence is not established, so no full-library size-win claim is eligible.",
+  "sizes": {
+    "previous": null,
+    "current": null,
+    "upstream": {
+      "path": ".page-audit/upstream/official.esm.js",
+      "raw": 123512,
+      "gzip9": 46451,
+      "brotli11": 41531,
+      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000"
+    }
+  },
+  "officialArtifacts": [
+    {
+      "path": ".page-audit/upstream/official.esm.js",
+      "raw": 123512,
+      "gzip9": 46451,
+      "brotli11": 41531,
+      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000"
+    },
+    {
+      "path": ".page-audit/upstream/official.unminified.js",
+      "raw": 374743,
+      "gzip9": 87851,
+      "brotli11": 72419,
+      "sha256": "7f7ff19ec0dbfcfea6e4f6ec1e9e5d29e82b0c8e903fc9bce337daf832a26154"
+    }
+  ],
+  "candidateArtifacts": [],
+  "timing": {
+    "primaryCompilerSeconds": null,
+    "primaryScope": "One real compiler process, including code generation and codec-guided search; excludes subsequent package wrapping.",
+    "packageSeconds": 96.92631187899997,
+    "packageScope": "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility; 4 successful compiler invocations plus package generation.",
+    "upstreamSeconds": 0.699557759,
+    "upstreamScope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+    "protocol": "Same shared worker for both lanes; one fresh LilScript package build; median of three sequential upstream ESM builds (PlayCanvas records one native reference build). Outside compiler jobs were observed in the pool, so contention is not excluded. Dependencies, tests and compression measurement are outside these build times.",
+    "upstreamSamples": [
+      {
+        "bundleSeconds": 0.026850965,
+        "wallSeconds": 0.910690602
+      },
+      {
+        "bundleSeconds": 0.01966497199999992,
+        "wallSeconds": 0.699557759
+      },
+      {
+        "bundleSeconds": 0.021300081999999974,
+        "wallSeconds": 0.6751456150000001
+      }
+    ]
+  },
+  "behavior": {
+    "command": "node --test tests/*.test.mjs",
+    "summary": "No repository behavior gate was available.",
+    "before": {
+      "exitCode": 1,
+      "failures": [],
+      "logSha256": "692f90897aee6258b09c4ebd696d476d7e7378b9779fdd0831f3e010046da2ff"
+    },
+    "after": {}
+  },
+  "findings": [
+    "Fresh build failed: Error: error: generated JavaScript callable ABI mismatch: expected [(\"assertNumber\", Function, Some(2), Some(true), []), (\"callWithAsyncErrorHandling\", Function, Some(4), Some(true), []), (\"callWithErrorHandling\", Function, Some(4), Some(true), []), (\"cloneVNode\", Function, Some(2), Some(true), []), (\"compatH\", Function, Some(3), Some(true), []), (\"computed\", Function, Some(2), Some(true), []), (\"createAppAPI\", Function, Some(2), Some(true), []), (\"createBlock\", Function, Some(5), Some(true), []), (\"createCommentVNode\", Function, Some(1), Some(true), []), (\"createComponentInstance\", Function, Some(3), Some(true), []), (\"createElementBlock\", Function, Some(6), Some(true), []), (\"createElementVNode\", Function, Some(6), Some(true), []), (\"createHydrationRenderer\", Function, Some(1), Some(true"
+  ],
+  "primaryArtifact": "artifacts/shared-runtime.generated.js",
+  "beforePage": {
+    "url": "https://yeargun.github.io/vuelil/",
+    "status": 200,
+    "sha256": "b23298c10698a745c787f7f6eaed9ea41eec5ecec070f544851d35fb7caf2865",
+    "lastModified": "Sun, 30 Aug 2026 23:31:23 GMT"
+  },
+  "codecSha256": "9257fd055728895c11b9c4b0d882895d7d11bb3dd3495f560123879ca2bc3cd6",
+  "publicationArtifacts": [
+    {
+      "path": "artifacts/compiler-dom.generated.js",
+      "sha256": "fdc75691b7715ba2b25605342ad42e923bdf3e1d5ef56fffbf994c4c8e1df2a7"
+    },
+    {
+      "path": "artifacts/compiler-sfc.generated.js",
+      "sha256": "44d977c62b35465035d52661bbd8c30e71e753ca4b5e989b9ab5303e8bd3007b"
+    },
+    {
+      "path": "artifacts/compiler-ssr.generated.js",
+      "sha256": "f50bb7e264e282bed0fd40e0e967b02b81cc036a534dc5aec78babb07de3df18"
+    },
+    {
+      "path": "artifacts/reactivity.esm-browser.prod.js",
+      "sha256": "92cdc4607b589a4af079c0e17285b7141ed38876502e007fbc295cab1845162c"
+    },
+    {
+      "path": "artifacts/shared-runtime.generated.js",
+      "sha256": "9ec3a74711d0ee116ca1d4bed8a022f59fca282f615ddbdc12ff6fc0c6c68781"
+    },
+    {
+      "path": "packages/vuelil/@vue/compat/index.js",
+      "sha256": "0dc904e2ec197552ea1fcc52db5d044741341efeae682f354b4a40177e3e471a"
+    },
+    {
+      "path": "packages/vuelil/@vue/compiler-core/index.js",
+      "sha256": "9cb1126e566dbcbab82ce9e76d62156318376860946d59498da02bd0f94d3812"
+    },
+    {
+      "path": "packages/vuelil/@vue/compiler-dom/index.js",
+      "sha256": "63ea632da60a3239764d5de2491d1f50a94e4fcbb467c720d57a88bb7c43885d"
+    },
+    {
+      "path": "packages/vuelil/@vue/compiler-sfc/index.js",
+      "sha256": "25f15990b99cef266fdfcf8e24c200808fee78db495e5ed1da2c6a7fc876ea6b"
+    },
+    {
+      "path": "packages/vuelil/@vue/compiler-ssr/index.js",
+      "sha256": "3d6762029a42e392c5f4912a98acf016d0a4ebb9f09f0b35284f6174a6ecfc3c"
+    },
+    {
+      "path": "packages/vuelil/@vue/reactivity/index.js",
+      "sha256": "376bfa43e99bb5f70a7346d4a9e1b06eb2979b7f9502d484c733f38a673c4d47"
+    },
+    {
+      "path": "packages/vuelil/@vue/runtime-core/index.js",
+      "sha256": "f866fec897aa9516af7c9eafaef2550cf9e47c4d4a2dbbd272ceeea79f0ab480"
+    },
+    {
+      "path": "packages/vuelil/@vue/runtime-dom/index.js",
+      "sha256": "61893c6157ff01386eac7a55863678a65b3bac1f9e0209ce269502ea2885c8f9"
+    },
+    {
+      "path": "packages/vuelil/@vue/runtime-test/index.js",
+      "sha256": "99af8c892e5ed7e1e3afe7ed457a674360fc9cc6f430c9a502c963ec51e38db9"
+    },
+    {
+      "path": "packages/vuelil/@vue/server-renderer/index.js",
+      "sha256": "5181a900a51546df550f95c6297beee7c5031dba1d7a6695e5f70b00e7d6e5a8"
+    },
+    {
+      "path": "packages/vuelil/@vue/shared/index.js",
+      "sha256": "ffe73f7337c8f7603dc47eeaf9af36b02b79790d313d38e7914aa1c50902eaf6"
+    },
+    {
+      "path": "packages/vuelil/compiler-core.js",
+      "sha256": "32dbd7f92b5892917182a30ec0cb5aaaea6ed901f1a2a917e11ab879d68c82bc"
+    },
+    {
+      "path": "packages/vuelil/compiler-dom.js",
+      "sha256": "f24fd2a66cdf543debd2ad6e205f66090792bf6d66cbc086064fe0716bfa3e83"
+    },
+    {
+      "path": "packages/vuelil/compiler-sfc.js",
+      "sha256": "518cff3b5b290243d6ca2147506bf245abd9be1b9198dbfc4bf1d3ab48746ffe"
+    },
+    {
+      "path": "packages/vuelil/compiler-sfc/index.browser.js",
+      "sha256": "cd3c6cb1afbc28a225d51ca7a865fa8ee93d21d132e2e8feda53ef781ef2d853"
+    },
+    {
+      "path": "packages/vuelil/compiler-sfc/index.browser.mjs",
+      "sha256": "bce2935208f30645a9b7828dea2a6faa0124e2301d30ba0033c8d28cbe09b40e"
+    },
+    {
+      "path": "packages/vuelil/compiler-sfc/index.js",
+      "sha256": "cd3c6cb1afbc28a225d51ca7a865fa8ee93d21d132e2e8feda53ef781ef2d853"
+    },
+    {
+      "path": "packages/vuelil/compiler-sfc/index.mjs",
+      "sha256": "bce2935208f30645a9b7828dea2a6faa0124e2301d30ba0033c8d28cbe09b40e"
+    },
+    {
+      "path": "packages/vuelil/compiler-ssr.js",
+      "sha256": "6153d1463e91998cf7839f72ad8ef6de4347fa85f48ec2b1f1fbba00ee2a15a0"
+    },
+    {
+      "path": "packages/vuelil/index.cjs",
+      "sha256": "58e41f1e2eb769311bade5ca9b3755d55ea75ae983928f75edeee0a6ca478436"
+    },
+    {
+      "path": "packages/vuelil/index.js",
+      "sha256": "74939a292a91241d4927876212abe3f2fa2b8ac24d267bc22f686ac3fd0911b7"
+    },
+    {
+      "path": "packages/vuelil/index.mjs",
+      "sha256": "b58e44208177cf85fce174cbe881fe9fd42daf61cdff5a109e3282fefe629c07"
+    },
+    {
+      "path": "packages/vuelil/jsx-runtime/index.js",
+      "sha256": "fdd75341a3fc609208bcf6f65e87c6bab8e81127bfc39e1fd30d66c03b934203"
+    },
+    {
+      "path": "packages/vuelil/jsx-runtime/index.mjs",
+      "sha256": "cb7f5e7e78a659617bba2b7a2563fff6e07f09ff8ebba748e2cf154177fddc5a"
+    },
+    {
+      "path": "packages/vuelil/production/compiler-core.js",
+      "sha256": "78b8b7395298118b5a2e580c7296371a10d0f2bb9b6e99a190922b9bfea5a735"
+    },
+    {
+      "path": "packages/vuelil/production/compiler-dom.js",
+      "sha256": "3a5a1463eb02bd987b2058d6981d99e1c85e7267af446c11c60b51fcd3f49faf"
+    },
+    {
+      "path": "packages/vuelil/production/reactivity.js",
+      "sha256": "92cdc4607b589a4af079c0e17285b7141ed38876502e007fbc295cab1845162c"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-core.js",
+      "sha256": "ebb1a56dcc233f9052d56b7f423527394c6dda4f6c6ffe435ab7f1b6a7d9b645"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-dom.js",
+      "sha256": "0cc8ad909104001d863d1294408352370bc5dab9f304f422052effc02e7999ae"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-only/reactivity.js",
+      "sha256": "92cdc4607b589a4af079c0e17285b7141ed38876502e007fbc295cab1845162c"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-only/runtime-core.js",
+      "sha256": "851c416536509625cca926c32fb2992c3c2f6e0e496c6c6e57fa7422658e8005"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-only/runtime-dom.js",
+      "sha256": "be7795ac58ac0099948b40295aa6aeae7d262b38133dcc34a9c855b7d1f7b667"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-only/shared.js",
+      "sha256": "9ec3a74711d0ee116ca1d4bed8a022f59fca282f615ddbdc12ff6fc0c6c68781"
+    },
+    {
+      "path": "packages/vuelil/production/runtime-only/vue.runtime.js",
+      "sha256": "43d8b23d37d15934cbfa9456a707429e2d254ce2d2779cfe4deea16f9ff48ea5"
+    },
+    {
+      "path": "packages/vuelil/production/sfc/reactivity.js",
+      "sha256": "92cdc4607b589a4af079c0e17285b7141ed38876502e007fbc295cab1845162c"
+    },
+    {
+      "path": "packages/vuelil/production/sfc/runtime-core.js",
+      "sha256": "f47188afd53e78ae2fb7a22be6aa2fc5c82c833c0388bc231029922eb45cd715"
+    },
+    {
+      "path": "packages/vuelil/production/sfc/runtime-dom.js",
+      "sha256": "249230540a336f86b2375cd5ab7510430ade0009447809c13055ac3b087215b3"
+    },
+    {
+      "path": "packages/vuelil/production/sfc/shared.js",
+      "sha256": "9ec3a74711d0ee116ca1d4bed8a022f59fca282f615ddbdc12ff6fc0c6c68781"
+    },
+    {
+      "path": "packages/vuelil/production/sfc/vue.runtime.js",
+      "sha256": "43d8b23d37d15934cbfa9456a707429e2d254ce2d2779cfe4deea16f9ff48ea5"
+    },
+    {
+      "path": "packages/vuelil/production/shared.js",
+      "sha256": "9ec3a74711d0ee116ca1d4bed8a022f59fca282f615ddbdc12ff6fc0c6c68781"
+    },
+    {
+      "path": "packages/vuelil/production/vue.js",
+      "sha256": "1ee00768e9ba6dbc34a1ace333bbb4a73f5480ab8d8f83a496aecefb7c654c42"
+    },
+    {
+      "path": "packages/vuelil/production/vue.runtime.js",
+      "sha256": "ff2f997a67e8c61fd42ad911c810081a864fba30da666bde5d413aaf1d57fe22"
+    },
+    {
+      "path": "packages/vuelil/reactivity.js",
+      "sha256": "704c6d90fc29d9d813443e7249d12eaaab37d5491bde062547c918a9ee720b29"
+    },
+    {
+      "path": "packages/vuelil/runtime-core.compat.internal.js",
+      "sha256": "68ebf715b1e8fba6330b03aa6f2e7bef33c940ae77bfe1874801b2dee9a58e1e"
+    },
+    {
+      "path": "packages/vuelil/runtime-core.compat.js",
+      "sha256": "1ec0bda07ccdd2195b876c32d648effa52b4c48eeec554d262317fe01a00e7ea"
+    },
+    {
+      "path": "packages/vuelil/runtime-core.internal.js",
+      "sha256": "9ae31f58f7e0f03262be8195dddaf9accd2946ff3c5bb78e0eb43ca495b2b0c4"
+    },
+    {
+      "path": "packages/vuelil/runtime-core.js",
+      "sha256": "cf1d929626175d2c2208ca4005a2c15ec9f59c2a8d0fdfb0d59bb4275c5be6a9"
+    },
+    {
+      "path": "packages/vuelil/runtime-dom.compat.js",
+      "sha256": "b1ef187fc022d3ac0fd300c949195aea9f92627bce50f4c74cb15f6a8f981571"
+    },
+    {
+      "path": "packages/vuelil/runtime-dom.js",
+      "sha256": "3452580c5eeb6d08d09cecebae9082617811bb0b0826b05f9925b4e16cf685f8"
+    },
+    {
+      "path": "packages/vuelil/runtime-test.js",
+      "sha256": "3ceba740adf5e2c87361742c3e1028389fe760f9b1ec2aa6ff88587e9692e314"
+    },
+    {
+      "path": "packages/vuelil/server-renderer.js",
+      "sha256": "b7c001e568e8bea5e5cbda895db40cccce755681335cc2dda8c618fe9316b05b"
+    },
+    {
+      "path": "packages/vuelil/server-renderer/index.js",
+      "sha256": "22c0330d8f485b1ed97d6f0d3c0d4440baa08a9652d48954e344e69e2b78ce73"
+    },
+    {
+      "path": "packages/vuelil/server-renderer/index.mjs",
+      "sha256": "1d8444396ac91293990e7ad9797de445480bbabc97abd1ab04cbabbc7c67728d"
+    },
+    {
+      "path": "packages/vuelil/shared.js",
+      "sha256": "af475ae0c9b7f2f43924bdc4e4d1a88966044d25570ffe5f11b6a3978db6e8b6"
+    },
+    {
+      "path": "packages/vuelil/vue-compat.js",
+      "sha256": "c601674ef8dbcc45d1b7ed55709e93d0a2584ae1800c3bac72bd6bdfd591b12f"
+    },
+    {
+      "path": "packages/vuelil/vue-compat.runtime.js",
+      "sha256": "aa43d49682934b144946cca91ac8625e7d232593b20413fde826d54a93fe7ffa"
+    },
+    {
+      "path": "packages/vuelil/vue.global.test.js",
+      "sha256": "8ccb626ace9ea5653c29bf287d8662ebbd8bc108f688f3ddc627cc70ca0a81b9"
+    },
+    {
+      "path": "packages/vuelil/vue.js",
+      "sha256": "9cf769085bf448c02fe0d790537815a438c981603ac36220a939358caad37452"
+    },
+    {
+      "path": "packages/vuelil/vue.runtime.js",
+      "sha256": "d7ef0e331a244d632017523666752a9b2d461397929d2b277f6155f83ec2f8fb"
+    },
+    {
+      "path": "packages/vuelil/vue.runtime.project.js",
+      "sha256": "7cd30d2063209c70c92a939d9d31f4c5f8d42aa56927851405ff3fa353fd8919"
+    }
+  ],
+  "publicationPolicy": "Retain previous public distribution; publish the diagnostic audit",
+  "publicationBase": "472d660aae51b000efc30aa3317acd20d43a2c9e",
+  "publicationSourceFingerprint": "5c11d575890e5ffc86989a5f63f810efa40a2611f6d513bc28658c385f5100a4"
+}

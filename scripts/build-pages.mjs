@@ -305,3 +305,6 @@ function isMain() {
 }
 
 if (isMain()) buildPages();
+
+// Refuse publication if source or served artifacts drift from this measurement.
+await import("./build-audit.mjs").then(({writeAudit}) => writeAudit({root: projectRoot, output: webRoot}));

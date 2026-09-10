@@ -15,6 +15,35 @@
     <div class="pin"><span>Vue 3.5.42</span><code>d63616ca17de965ed32dcb449a4c5cd9982f15d2</code></div>
   </header>
   <main>
+<!-- build-audit:start -->
+<style>#build-audit{max-width:1160px;margin:32px auto;padding:28px;border:1px solid #b7c8cf;border-radius:16px;background:#f4fafb;color:#162a32;font:15px/1.6 system-ui,sans-serif;box-sizing:border-box}#build-audit h2{font:600 26px/1.2 system-ui;margin:4px 0 12px;color:#162a32}#build-audit h3{font:600 18px system-ui;color:#162a32;margin:24px 0 8px}#build-audit p{color:#29424d;margin:8px 0}#build-audit a{color:#075b77;text-decoration:underline}#build-audit .audit-scroll{overflow:auto}#build-audit table{width:100%;border-collapse:collapse;font:inherit;white-space:normal;background:transparent;color:#162a32}#build-audit th,#build-audit td{text-align:left;padding:10px 12px;border-bottom:1px solid #cfdee3;background:transparent;color:#162a32}#build-audit code{overflow-wrap:anywhere;font-size:12px}#build-audit .audit-status{font-weight:650;color:#974710}#build-audit details{margin-top:14px}#build-audit ul{padding-left:24px}@media(max-width:650px){#build-audit{margin:16px 10px;padding:18px}#build-audit th,#build-audit td{padding:8px 5px}}</style>
+<section id="build-audit" aria-labelledby="build-audit-title">
+<p>Compiler and comparison refresh · 2026-09-10T13:47:13Z</p>
+<h2 id="build-audit-title">What changed, and what it cost to build</h2>
+<p class="audit-status">Refresh found an unresolved build or test failure</p>
+<p>The newly measured artifact remains diagnostic until its behavior gate is satisfied; the previously published runtime is retained.</p>
+<div class="audit-scroll"><table><thead><tr><th>ESM artifact</th><th>Raw</th><th>gzip-9</th><th>Brotli-11</th></tr></thead><tbody>
+<tr><th>Previously published LilScript snapshot</th><td>unavailable</td><td>unavailable</td><td>unavailable</td></tr>
+<tr><th>Fresh LilScript (diagnostic)</th><td>unavailable</td><td>unavailable</td><td>unavailable</td></tr>
+<tr><th>Fresh original comparison bundle</th><td>123,512 B</td><td>46,451 B</td><td>41,531 B</td></tr>
+</tbody></table></div>
+<p>vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline Sizes use canonical zlib 1.3.1 gzip-9 and Google Brotli 1.1.0 quality 11. This is diagnostic: full-library feature/API equivalence is not established, so no full-library size-win claim is eligible.</p>
+<h3>Build machine and elapsed time</h3><p>Azure Standard_D16als_v7 · AMD EPYC 9V45 96-Core Processor · 16 logical CPUs · 31.3 GiB RAM<br>Ubuntu 24.04.4 LTS · 6.17.0-1022-azure · Node v24.11.1 · Rayon 16 threads.</p><p>The audit scheduled one port per worker, but this is a shared pool. Outside compiler jobs were observed during the run; timings are contextual wall times, not controlled speedup benchmarks.</p>
+<div class="audit-scroll"><table><thead><tr><th>Measured build lane</th><th>Wall time</th><th>Scope</th></tr></thead><tbody>
+<tr><th>LilScript primary ESM compilation</th><td>unavailable</td><td>One real compiler process, including code generation and codec-guided search; excludes subsequent package wrapping.</td></tr>
+<tr><th>LilScript complete package attempt</th><td>96.93 s</td><td>npm run build:shared &amp;&amp; npm run build:reactivity &amp;&amp; npm run build:runtime-core &amp;&amp; npm run build:runtime-dom &amp;&amp; npm run build:runtime-test &amp;&amp; npm run build:compiler-core &amp;&amp; npm run build:compiler-dom &amp;&amp; npm run build:vue-compat &amp;&amp; npm run build:compiler-ssr &amp;&amp; npm run build:server-renderer &amp;&amp; npm run build:vue &amp;&amp; npm run build:compiler-sfc &amp;&amp; npm run build:compatibility; 4 successful compiler invocations plus package generation.</td></tr>
+<tr><th>Original library comparison build</th><td>0.700 s</td><td>vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline</td></tr>
+</tbody></table></div>
+<p>Same shared worker for both lanes; one fresh LilScript package build; median of three sequential upstream ESM builds (PlayCanvas records one native reference build). Outside compiler jobs were observed in the pool, so contention is not excluded. Dependencies, tests and compression measurement are outside these build times. The full package and upstream bundle can produce different sets of files; no speedup ratio is inferred from those totals.</p>
+<details><summary>Versions, behavior checks, and reproducibility</summary>
+<p>Port source: <code>472d660aae51b000efc30aa3317acd20d43a2c9e</code><br>Compiler: <code>63c2896a71e60cbcca7870fe979f9d6ecaff3452</code> (release); binary SHA-256 <code>2319462ef7d858c8e2a5a767260aa4f80d325e0045afa0cc86cc122d1299b059</code>.</p>
+<p>Upstream pin: vue@3.5.42. Registry latest at audit: 3.5.42. Pinned behavior remains the compatibility target; this audit does not claim support for newer releases.</p>
+<p>No repository behavior gate was available.</p>
+<ul><li>Fresh build failed: Error: error: generated JavaScript callable ABI mismatch: expected [(&quot;assertNumber&quot;, Function, Some(2), Some(true), []), (&quot;callWithAsyncErrorHandling&quot;, Function, Some(4), Some(true), []), (&quot;callWithErrorHandling&quot;, Function, Some(4), Some(true), []), (&quot;cloneVNode&quot;, Function, Some(2), Some(true), []), (&quot;compatH&quot;, Function, Some(3), Some(true), []), (&quot;computed&quot;, Function, Some(2), Some(true), []), (&quot;createAppAPI&quot;, Function, Some(2), Some(true), []), (&quot;createBlock&quot;, Function, Some(5), Some(true), []), (&quot;createCommentVNode&quot;, Function, Some(1), Some(true), []), (&quot;createComponentInstance&quot;, Function, Some(3), Some(true), []), (&quot;createElementBlock&quot;, Function, Some(6), Some(true), []), (&quot;createElementVNode&quot;, Function, Some(6), Some(true), []), (&quot;createHydrationRenderer&quot;, Function, Some(1), Some(true</li></ul>
+<p>Current runtime timings elsewhere on this page are historical unless explicitly dated by this receipt. Build times above were measured for this refresh.</p>
+<p><a href="./build-audit.json">Download the machine-readable receipt</a> · <a href="https://github.com/yeargun/vuelil">Repository and build instructions</a></p>
+</details></section>
+<!-- build-audit:end -->
     <section class="summary-grid" aria-label="Audit summary">
       <article><strong>12</strong><span>scoped packages</span></article>
       <article><strong>234/234</strong><span>verified source files</span></article>

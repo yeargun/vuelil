@@ -1,5 +1,9 @@
 # VueLil laboratory
 
+<!-- current-build-audit -->
+**Build audit, 2026-09-10:** [blocked; compiler, machine, build times, version gaps and behavior checks](https://yeargun.github.io/vuelil/#build-audit). The [JSON receipt](web/build-audit.json) records the current comparison; older benchmark prose retains its original scope.
+
+
 VueLil is a source-level LilScript rewrite of Vue, pinned to `vue@3.5.42`
 (`v3.5.42`, commit `d63616ca17de965ed32dcb449a4c5cd9982f15d2`).
 This laboratory does not treat an export stub, wrapper around Vue, or reduced
