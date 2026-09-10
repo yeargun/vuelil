@@ -1,47 +1,138 @@
 {
-  "schemaVersion": 1,
-  "measuredAt": "2026-09-10T13:47:13Z",
+  "schemaVersion": 2,
+  "measuredAt": "2026-09-10T20:52:50Z",
   "name": "vuelil",
   "compiler": {
-    "commit": "63c2896a71e60cbcca7870fe979f9d6ecaff3452",
-    "sha256": "2319462ef7d858c8e2a5a767260aa4f80d325e0045afa0cc86cc122d1299b059",
-    "profile": "release",
-    "dirty": false
+    "commit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
+    "sha256": "0616048498eb9eb2e4bd75b39e8e6a083733ada647e16108edfee30ad183beeb"
   },
   "upstream": {
     "package": "vue",
-    "version": "3.5.42"
+    "version": "3.5.42",
+    "repository": "https://github.com/vuejs/core.git",
+    "commit": "d63616ca17de965ed32dcb449a4c5cd9982f15d2"
   },
-  "scope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
-  "compatibility": "The full ESM build is unavailable.",
+  "scope": "vue@3.5.42 public ESM runtime graph. Original ESM assembled from the pinned Git source build.",
+  "compatibility": "The compiler did not complete this package build.",
   "tests": null,
   "buildComplete": false,
   "machine": {
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7",
     "cpu": "AMD EPYC 9V45 96-Core Processor",
     "logicalCpus": 16,
     "memoryBytes": 33648435200,
     "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.17.0-1022-azure",
     "node": "v24.11.1",
-    "rayonThreads": 16,
-    "provider": "Azure",
-    "instanceClass": "Standard_D16als_v7"
+    "rayonThreads": 8,
+    "loadAtStart": [
+      0.6337890625,
+      3.0009765625,
+      3.46923828125
+    ],
+    "loadAtEnd": [
+      1.35986328125,
+      2.65478515625,
+      3.29833984375
+    ]
   },
   "build": {
     "compilerSeconds": null,
-    "packageSeconds": 96.92631187899997,
-    "originalSeconds": 0.699557759,
-    "packageScope": "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility; 4 successful compiler invocations plus package generation.",
-    "originalScope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
-    "protocol": "Same shared worker for both lanes; one fresh LilScript package build; median of three sequential upstream ESM builds (PlayCanvas records one native reference build). Outside compiler jobs were observed in the pool, so contention is not excluded. Dependencies, tests and compression measurement are outside these build times."
+    "packageSeconds": 96.51194940900041,
+    "originalSeconds": 2.3736771320000116,
+    "originalEsmSeconds": 0.8151677089999998,
+    "packageScope": "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility",
+    "originalScope": "bash -c corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime",
+    "protocol": {
+      "repetitions": 3,
+      "cleanOutputs": true,
+      "dependencyInstallationTimedSeparately": true,
+      "sourceArchives": "Pinned Git checkouts; original repository package build commands, followed by production ESM assembly.",
+      "workerUse": "Both implementations use the same machine and Node version. This shared build pool also runs unrelated jobs; timings are contextual wall times, with CPU time recorded separately."
+    }
   },
   "esm": {
     "lilscript": null,
     "original": {
-      "raw": 123512,
-      "gzip9": 46451,
-      "brotli11": 41531,
-      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000",
+      "raw": 192753,
+      "gzip9": 70881,
+      "brotli11": 61536,
+      "sha256": "7d6614d0a2fe9be3c1ab1e72e54360a86577eb4e829b8f966bf848382a60caef",
       "file": "./esm-comparison/original.js"
     }
+  },
+  "sourceBuild": {
+    "original": {
+      "complete": true,
+      "medianSeconds": 2.3736771320000116,
+      "minimumSeconds": 2.3715565110005628,
+      "maximumSeconds": 2.420921945000373,
+      "samples": [
+        {
+          "command": [
+            "bash",
+            "-c",
+            "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+          ],
+          "wallSeconds": 2.420921945000373,
+          "cpuSeconds": 11.714795,
+          "exitCode": 0,
+          "timedOut": false,
+          "log": "original-build-1.log",
+          "logSha256": "8d2a694464a157ac26187a5f42407d7a8400a00d445326517286b9f13a6d11cb"
+        },
+        {
+          "command": [
+            "bash",
+            "-c",
+            "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+          ],
+          "wallSeconds": 2.3715565110005628,
+          "cpuSeconds": 11.721474999999998,
+          "exitCode": 0,
+          "timedOut": false,
+          "log": "original-build-2.log",
+          "logSha256": "e102d897ceba42420f196a72545ba73bfff45c9c64ccd1a1bf46af3190cc9b3a"
+        },
+        {
+          "command": [
+            "bash",
+            "-c",
+            "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+          ],
+          "wallSeconds": 2.3736771320000116,
+          "cpuSeconds": 11.776442,
+          "exitCode": 0,
+          "timedOut": false,
+          "log": "original-build-3.log",
+          "logSha256": "ebad79b1129339392629b7e9b572233212e9baccb03119bb9595a20cd97a6359"
+        }
+      ]
+    },
+    "lilscript": {
+      "complete": false,
+      "medianSeconds": null,
+      "minimumSeconds": null,
+      "maximumSeconds": null,
+      "samples": [
+        {
+          "command": [
+            "bash",
+            "-c",
+            "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility"
+          ],
+          "wallSeconds": 96.51194940900041,
+          "cpuSeconds": 104.910977,
+          "exitCode": 1,
+          "timedOut": false,
+          "log": "lilscript-build-1.log",
+          "logSha256": "7bddda35ee343d98994533de1297c78fcbbaec82f0b9daf30dc77d61fa508099"
+        }
+      ]
+    },
+    "scopeNote": "Both timings cover each repository\u2019s package build command; their output formats and build checks can differ.",
+    "cleanOutputs": true,
+    "installationExcluded": true
   }
 }

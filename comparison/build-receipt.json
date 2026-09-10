@@ -381,7 +381,33 @@
   "comparisonArtifacts": [
     {
       "path": "web/esm-comparison/original.js",
-      "sha256": "6c56f5141e1a18ee1f22c82ba191d9ed0666d2300d4109eefc9210f976a5b000"
+      "sha256": "7d6614d0a2fe9be3c1ab1e72e54360a86577eb4e829b8f966bf848382a60caef"
+    },
+    {
+      "path": "web/source-build.json",
+      "sha256": "45bcf90e7ee898c53fa7d80c5f5ac02f66c007458b7aac078e121f273270130d"
+    },
+    {
+      "path": "web/comparison.json",
+      "sha256": "0165761a0148bf3bfe7f22b964a1918d13ef9366fe29abe8c02310826cfdf0ec"
     }
-  ]
+  ],
+  "sourceBuildReceipt": "comparison/source-build/result.json",
+  "currentMeasurement": {
+    "compiler": {
+      "commit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
+      "sha256": "0616048498eb9eb2e4bd75b39e8e6a083733ada647e16108edfee30ad183beeb"
+    },
+    "source": {
+      "commit": "472d660aae51b000efc30aa3317acd20d43a2c9e"
+    },
+    "upstream": {
+      "repository": "https://github.com/vuejs/core.git",
+      "commit": "d63616ca17de965ed32dcb449a4c5cd9982f15d2",
+      "package": "vue",
+      "version": "3.5.42",
+      "directory": "packages/vue"
+    },
+    "compatibility": "The compiler did not complete this package build."
+  }
 }

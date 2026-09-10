@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "name": "vuelil",
+  "startedAt": "2026-09-10T20:50:54Z",
+  "machine": {
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "logicalCpus": 16,
+    "memoryBytes": 33648435200,
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.17.0-1022-azure",
+    "node": "v24.11.1",
+    "rayonThreads": 8,
+    "loadAtStart": [
+      0.6337890625,
+      3.0009765625,
+      3.46923828125
+    ],
+    "loadAtEnd": [
+      1.35986328125,
+      2.65478515625,
+      3.29833984375
+    ]
+  },
+  "compiler": {
+    "commit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
+    "sha256": "0616048498eb9eb2e4bd75b39e8e6a083733ada647e16108edfee30ad183beeb"
+  },
+  "source": {
+    "repository": "https://github.com/vuejs/core.git",
+    "commit": "d63616ca17de965ed32dcb449a4c5cd9982f15d2",
+    "package": "vue",
+    "version": "3.5.42",
+    "directory": "packages/vue"
+  },
+  "portSource": {
+    "commit": "472d660aae51b000efc30aa3317acd20d43a2c9e",
+    "snapshot": "/tmp/lilscript-page-refresh-20260910/current/vuelil"
+  },
+  "prerequisiteAdjustments": null,
+  "steps": {
+    "original-install": {
+      "command": [
+        "corepack",
+        "pnpm",
+        "install",
+        "--frozen-lockfile",
+        "--ignore-scripts"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 5.8764149979997455,
+      "cpuSeconds": 13.894584,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-install.log",
+      "logSha256": "b7e596751508eebaac7a6caa5bf4a9deb4ac18c5af7483570bc147880d5d82d3",
+      "tail": "Scope: all 18 workspace projects\n? Verifying lockfile against supply-chain policies (620 entries)...\nLockfile is up to date, resolution step is skipped\nProgress: resolved 1, reused 0, downloaded 0, added 0\nPackages: +502\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nPackages are hard linked from the content-addressable store to the virtual store.\n  Content-addressable store is at: /home/lilfarm/.local/share/pnpm/store/v11\n  Virtual store is at:             node_modules/.pnpm\nProgress: resolved 502, reused 0, downloaded 194, added 15\nProgress: resolved 502, reused 0, downloaded 501, added 502, done\n\ndevDependencies:\n+ @babel/parser 7.29.8\n+ @babel/types 7.29.8\n+ @rollup/plugin-alias 6.0.0\n+ @rollup/plugin-commonjs 29.0.3\n+ @rollup/plugin-json 6.1.0\n+ @rollup/plugin-node-resolve 16.0.3\n+ @rollup/plugin-replace 5.0.4\n+ @swc/core 1.15.47\n+ @types/hash-sum 1.0.2\n+ @types/node 24.13.3\n+ @types/semver 7.8.0\n+ @types/serve-handler 6.1.4\n+ @vitest/browser-playwright 4.1.10\n+ @vitest/coverage-v8 4.1.10\n+ @vitest/eslint-plugin 1.6.26\n+ @vue/consolidate 1.0.0\n+ conventional-changelog 8.1.0\n+ conventional-changelog-angular 9.2.1\n+ enquirer 2.4.1\n+ esbuild 0.28.1\n+ esbuild-plugin-polyfill-node 0.3.0\n+ eslint 10.8.0\n+ eslint-plugin-import-x 4.17.1\n+ estree-walker 2.0.2\n+ jsdom 30.0.1\n+ lint-staged 17.3.0\n+ lodash 4.18.1\n+ magic-string 0.30.21\n+ markdown-table 3.0.4\n+ marked 13.0.3\n+ npm-run-all2 9.0.3\n+ picocolors 1.1.1\n+ playwright 1.62.1\n+ prettier 3.9.6\n+ pretty-bytes 7.1.1\n+ pug 3.0.4\n+ puppeteer 25.4.0\n+ rimraf 6.1.3\n+ rollup 4.62.4\n+ rollup-plugin-dts 6.4.1\n+ rollup-plugin-esbuild 6.2.1\n+ rollup-plugin-polyfill-node 0.13.0\n+ semver 7.8.5\n+ serve 14.2.6\n+ serve-handler 6.1.7\n+ simple-git-hooks 2.13.1\n+ todomvc-app-css 2.4.3\n+ tslib 2.8.1\n+ typescript 6.0.3\n+ typescript-eslint 8.65.0\n+ vite 8.2.0\n+ vitest 4.1.10\n\n\u2713 Lockfile passes supply-chain policies (620 entries in 4.5s)\nDone in 5s using pnpm v11.19.0\n"
+    },
+    "lilscript-install": {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "cwd": "port",
+      "wallSeconds": 1.3661662780004917,
+      "cpuSeconds": 2.077413999999999,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-install.log",
+      "logSha256": "df1251303f4cecc4b9e640faaffd3f84edf09045ff8791b0d7764f205ad993d1",
+      "tail": "npm warn EBADENGINE Unsupported engine {\nnpm warn EBADENGINE   package: 'jsdom@30.0.1',\nnpm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },\nnpm warn EBADENGINE   current: { node: 'v24.11.1', npm: '10.9.8' }\nnpm warn EBADENGINE }\n\nadded 186 packages in 1s\n"
+    },
+    "original-build-1": {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.420921945000373,
+      "cpuSeconds": 11.714795,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-1.log",
+      "logSha256": "8d2a694464a157ac26187a5f42407d7a8400a00d445326517286b9f13a6d11cb",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m87ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m156ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m200ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m204ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m259ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m309ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m337ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m491ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m627ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m929ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1.1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m26ms\u001b[22m\u001b[39m\n"
+    },
+    "lilscript-build-1": {
+      "command": [
+        "bash",
+        "-c",
+        "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility"
+      ],
+      "cwd": "port",
+      "wallSeconds": 96.51194940900041,
+      "cpuSeconds": 104.910977,
+      "exitCode": 1,
+      "timedOut": false,
+      "log": "lilscript-build-1.log",
+      "logSha256": "7bddda35ee343d98994533de1297c78fcbbaec82f0b9daf30dc77d61fa508099",
+      "tail": " []), (\"proxyRefs\", Value, None, None, []), (\"pushScopeId\", Function, Some(1), Some(true), []), (\"queueJob\", Function, Some(1), Some(true), []), (\"queuePostFlushCb\", Function, Some(1), Some(true), []), (\"reactive\", Value, None, None, []), (\"readonly\", Value, None, None, []), (\"ref\", Value, None, None, []), (\"registerRuntimeCompiler\", Function, Some(1), Some(true), []), (\"renderList\", Function, Some(4), Some(true), []), (\"renderSlot\", Function, Some(4), Some(true), []), (\"resetSuspenseId\", Function, Some(0), Some(true), []), (\"resolveComponent\", Function, Some(1), Some(true), []), (\"resolveDirective\", Function, Some(1), Some(true), []), (\"resolveDynamicComponent\", Function, Some(1), Some(true), []), (\"resolveFilter\", Value, None, None, []), (\"resolveTransitionHooks\", Function, Some(5), Some(true), []), (\"setBlockTracking\", Function, Some(1), Some(true), []), (\"setCurrentInstance\", Function, Some(1), Some(true), []), (\"setCurrentRenderingInstance\", Function, Some(1), Some(true), []), (\"setDevtoolsHook\", Function, Some(2), Some(true), []), (\"setTransitionHooks\", Function, Some(2), Some(true), []), (\"shallowReactive\", Value, None, None, []), (\"shallowReadonly\", Value, None, None, []), (\"shallowRef\", Value, None, None, []), (\"singletonApp\", Value, None, None, []), (\"ssrContextKey\", Value, None, None, []), (\"ssrUtils\", Function, Some(2), Some(true), []), (\"stop\", Value, None, None, []), (\"toDisplayString\", Function, Some(1), Some(true), []), (\"toHandlerKey\", Function, Some(1), Some(true), []), (\"toHandlers\", Function, Some(1), Some(true), []), (\"toRaw\", Value, None, None, []), (\"toRef\", Value, None, None, []), (\"toRefs\", Value, None, None, []), (\"toValue\", Value, None, None, []), (\"toggleDeprecationWarning\", Function, Some(1), Some(true), []), (\"transformVNodeArgs\", Function, Some(1), Some(true), []), (\"triggerRef\", Value, None, None, []), (\"unref\", Value, None, None, []), (\"useAttrs\", Function, Some(0), Some(true), []), (\"useId\", Function, Some(0), Some(true), []), (\"useModel\", Function, Some(3), Some(true), []), (\"useSSRContext\", Function, Some(0), Some(true), []), (\"useSlots\", Function, Some(0), Some(true), []), (\"useTemplateRef\", Function, Some(1), Some(true), []), (\"useTransitionState\", Function, Some(0), Some(true), []), (\"version\", Value, None, None, []), (\"warn\", Function, Some(0), Some(true), []), (\"watch\", Function, Some(3), Some(true), []), (\"watchEffect\", Function, Some(2), Some(true), []), (\"watchPostEffect\", Function, Some(2), Some(true), []), (\"watchSyncEffect\", Function, Some(2), Some(true), []), (\"withAsyncContext\", Function, Some(1), Some(true), []), (\"withCtx\", Function, Some(2), Some(true), []), (\"withDefaults\", Function, Some(2), Some(true), []), (\"withDirectives\", Function, Some(2), Some(true), []), (\"withMemo\", Function, Some(4), Some(true), []), (\"withScopeId\", Function, Some(1), Some(true), [])]\n --> /tmp/vuelil-runtime-core-Oe6k33/production/src/runtime-core/index.lil:1:1\n  |\n 1 | import { createAppAPI as runtimeTestCreateAppAPI } from \"./apiCreateApp\";\n  | ^\n\n    at compile (file:///home/lilfarm/source-perf-20260910/ports/vuelil/scripts/build-runtime-core.mjs:552:34)\n    at file:///home/lilfarm/source-perf-20260910/ports/vuelil/scripts/build-runtime-core.mjs:620:5\n    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.11.1\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/src/shared/index.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/config/open-world.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/artifacts/shared-runtime.generated.js"
+          ],
+          "startedAt": 1789073463.8794334,
+          "wallSeconds": 5.269947290420532,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/vuelil/artifacts/shared-runtime.generated.js",
+          "sha256": "b7128810c94e04b809fde3d4f8bd5c91134f2ec20f0888b3a3ebf44483a7279a"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/development/src/reactivity/test.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "development",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/development-internal.js"
+          ],
+          "startedAt": 1789073469.3591285,
+          "wallSeconds": 10.363935470581055,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/development-internal.js",
+          "sha256": "48ae631617986968acf6786ddbce665958bc5255527ccea017b15bc3b899b4f7"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/development/src/reactivity/production.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "development",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/development.js"
+          ],
+          "startedAt": 1789073479.7483516,
+          "wallSeconds": 9.971003770828247,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/development.js",
+          "sha256": "1285ac94306615aeb348f481ebe534a1c3ef96def8d320860b5b5620cc7ecc9b"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/production/src/reactivity/production.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "production",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/config/reactivity-production.toml",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/production.js"
+          ],
+          "startedAt": 1789073489.745294,
+          "wallSeconds": 69.40717029571533,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/production.js",
+          "sha256": "fe4152c8187f1901fd28133feaf9ed083c0bb6bac33e89a0682a0b5db28ac116"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-runtime-core-Oe6k33/production/src/runtime-core/index.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/tests/config/no-optimization-no-peephole.toml",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-runtime-core-Oe6k33/production.js"
+          ],
+          "startedAt": 1789073559.6315255,
+          "wallSeconds": 0.6068837642669678,
+          "exitCode": 1
+        }
+      ]
+    },
+    "original-build-2": {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.3715565110005628,
+      "cpuSeconds": 11.721474999999998,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-2.log",
+      "logSha256": "e102d897ceba42420f196a72545ba73bfff45c9c64ccd1a1bf46af3190cc9b3a",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m83ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m178ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m207ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m180ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m295ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m266ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m319ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m464ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m618ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m934ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m27ms\u001b[22m\u001b[39m\n"
+    },
+    "original-build-3": {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.3736771320000116,
+      "cpuSeconds": 11.776442,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-3.log",
+      "logSha256": "ebad79b1129339392629b7e9b572233212e9baccb03119bb9595a20cd97a6359",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m101ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m175ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m194ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m220ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m267ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m317ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m298ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m485ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m634ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m923ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1.1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m27ms\u001b[22m\u001b[39m\n"
+    },
+    "original-esm": {
+      "command": [
+        "node",
+        "/home/lilfarm/source-perf-20260910/tools/source-esm.mjs",
+        "/home/lilfarm/source-perf-20260910",
+        "vuelil"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 5.072918500999549,
+      "cpuSeconds": 6.985471999999991,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-esm.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tail": ""
+    }
+  },
+  "nativeBuilds": [
+    {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.420921945000373,
+      "cpuSeconds": 11.714795,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-1.log",
+      "logSha256": "8d2a694464a157ac26187a5f42407d7a8400a00d445326517286b9f13a6d11cb",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m87ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m156ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m200ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m204ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m259ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m309ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m337ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m491ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m627ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m929ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1.1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m26ms\u001b[22m\u001b[39m\n"
+    },
+    {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.3715565110005628,
+      "cpuSeconds": 11.721474999999998,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-2.log",
+      "logSha256": "e102d897ceba42420f196a72545ba73bfff45c9c64ccd1a1bf46af3190cc9b3a",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m83ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m178ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m207ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m180ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m295ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m266ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m319ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m464ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m618ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m934ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m27ms\u001b[22m\u001b[39m\n"
+    },
+    {
+      "command": [
+        "bash",
+        "-c",
+        "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 2.3736771320000116,
+      "cpuSeconds": 11.776442,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-3.log",
+      "logSha256": "ebad79b1129339392629b7e9b572233212e9baccb03119bb9595a20cd97a6359",
+      "tail": "$ node scripts/build.js --formats esm-bundler\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-core/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-sfc/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/runtime-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-ssr/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/compiler-dom/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/shared/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/reactivity/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/server-renderer/src/index.ts\u001b[22m \u2192 \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue-compat/src/esm-index.ts\u001b[22m \u2192 \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m101ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/shared/dist/shared.esm-bundler.js\u001b[22m in \u001b[1m175ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-dom/dist/compiler-dom.esm-bundler.js\u001b[22m in \u001b[1m194ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/server-renderer/dist/server-renderer.esm-bundler.js\u001b[22m in \u001b[1m220ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-ssr/dist/compiler-ssr.esm-bundler.js\u001b[22m in \u001b[1m267ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-dom/dist/runtime-dom.esm-bundler.js\u001b[22m in \u001b[1m317ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/reactivity/dist/reactivity.esm-bundler.js\u001b[22m in \u001b[1m298ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-core/dist/compiler-core.esm-bundler.js\u001b[22m in \u001b[1m485ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/runtime-core/dist/runtime-core.esm-bundler.js\u001b[22m in \u001b[1m634ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue-compat/dist/vue.esm-bundler.js\u001b[22m in \u001b[1m923ms\u001b[22m\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/compiler-sfc/dist/compiler-sfc.esm-bundler.js\u001b[22m in \u001b[1m1.1s\u001b[22m\u001b[39m\n$ node scripts/build.js vue --formats esm-bundler-runtime\n\u001b[36m\n\u001b[1m/home/lilfarm/source-perf-20260910/upstream/vuelil/packages/vue/src/runtime.ts\u001b[22m \u2192 \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m...\u001b[39m\n\u001b[32mcreated \u001b[1mpackages/vue/dist/vue.runtime.esm-bundler.js\u001b[22m in \u001b[1m27ms\u001b[22m\u001b[39m\n"
+    }
+  ],
+  "lilscriptBuilds": [
+    {
+      "command": [
+        "bash",
+        "-c",
+        "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility"
+      ],
+      "cwd": "port",
+      "wallSeconds": 96.51194940900041,
+      "cpuSeconds": 104.910977,
+      "exitCode": 1,
+      "timedOut": false,
+      "log": "lilscript-build-1.log",
+      "logSha256": "7bddda35ee343d98994533de1297c78fcbbaec82f0b9daf30dc77d61fa508099",
+      "tail": " []), (\"proxyRefs\", Value, None, None, []), (\"pushScopeId\", Function, Some(1), Some(true), []), (\"queueJob\", Function, Some(1), Some(true), []), (\"queuePostFlushCb\", Function, Some(1), Some(true), []), (\"reactive\", Value, None, None, []), (\"readonly\", Value, None, None, []), (\"ref\", Value, None, None, []), (\"registerRuntimeCompiler\", Function, Some(1), Some(true), []), (\"renderList\", Function, Some(4), Some(true), []), (\"renderSlot\", Function, Some(4), Some(true), []), (\"resetSuspenseId\", Function, Some(0), Some(true), []), (\"resolveComponent\", Function, Some(1), Some(true), []), (\"resolveDirective\", Function, Some(1), Some(true), []), (\"resolveDynamicComponent\", Function, Some(1), Some(true), []), (\"resolveFilter\", Value, None, None, []), (\"resolveTransitionHooks\", Function, Some(5), Some(true), []), (\"setBlockTracking\", Function, Some(1), Some(true), []), (\"setCurrentInstance\", Function, Some(1), Some(true), []), (\"setCurrentRenderingInstance\", Function, Some(1), Some(true), []), (\"setDevtoolsHook\", Function, Some(2), Some(true), []), (\"setTransitionHooks\", Function, Some(2), Some(true), []), (\"shallowReactive\", Value, None, None, []), (\"shallowReadonly\", Value, None, None, []), (\"shallowRef\", Value, None, None, []), (\"singletonApp\", Value, None, None, []), (\"ssrContextKey\", Value, None, None, []), (\"ssrUtils\", Function, Some(2), Some(true), []), (\"stop\", Value, None, None, []), (\"toDisplayString\", Function, Some(1), Some(true), []), (\"toHandlerKey\", Function, Some(1), Some(true), []), (\"toHandlers\", Function, Some(1), Some(true), []), (\"toRaw\", Value, None, None, []), (\"toRef\", Value, None, None, []), (\"toRefs\", Value, None, None, []), (\"toValue\", Value, None, None, []), (\"toggleDeprecationWarning\", Function, Some(1), Some(true), []), (\"transformVNodeArgs\", Function, Some(1), Some(true), []), (\"triggerRef\", Value, None, None, []), (\"unref\", Value, None, None, []), (\"useAttrs\", Function, Some(0), Some(true), []), (\"useId\", Function, Some(0), Some(true), []), (\"useModel\", Function, Some(3), Some(true), []), (\"useSSRContext\", Function, Some(0), Some(true), []), (\"useSlots\", Function, Some(0), Some(true), []), (\"useTemplateRef\", Function, Some(1), Some(true), []), (\"useTransitionState\", Function, Some(0), Some(true), []), (\"version\", Value, None, None, []), (\"warn\", Function, Some(0), Some(true), []), (\"watch\", Function, Some(3), Some(true), []), (\"watchEffect\", Function, Some(2), Some(true), []), (\"watchPostEffect\", Function, Some(2), Some(true), []), (\"watchSyncEffect\", Function, Some(2), Some(true), []), (\"withAsyncContext\", Function, Some(1), Some(true), []), (\"withCtx\", Function, Some(2), Some(true), []), (\"withDefaults\", Function, Some(2), Some(true), []), (\"withDirectives\", Function, Some(2), Some(true), []), (\"withMemo\", Function, Some(4), Some(true), []), (\"withScopeId\", Function, Some(1), Some(true), [])]\n --> /tmp/vuelil-runtime-core-Oe6k33/production/src/runtime-core/index.lil:1:1\n  |\n 1 | import { createAppAPI as runtimeTestCreateAppAPI } from \"./apiCreateApp\";\n  | ^\n\n    at compile (file:///home/lilfarm/source-perf-20260910/ports/vuelil/scripts/build-runtime-core.mjs:552:34)\n    at file:///home/lilfarm/source-perf-20260910/ports/vuelil/scripts/build-runtime-core.mjs:620:5\n    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.11.1\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/src/shared/index.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/config/open-world.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/artifacts/shared-runtime.generated.js"
+          ],
+          "startedAt": 1789073463.8794334,
+          "wallSeconds": 5.269947290420532,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/vuelil/artifacts/shared-runtime.generated.js",
+          "sha256": "b7128810c94e04b809fde3d4f8bd5c91134f2ec20f0888b3a3ebf44483a7279a"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/development/src/reactivity/test.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "development",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/development-internal.js"
+          ],
+          "startedAt": 1789073469.3591285,
+          "wallSeconds": 10.363935470581055,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/development-internal.js",
+          "sha256": "48ae631617986968acf6786ddbce665958bc5255527ccea017b15bc3b899b4f7"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/development/src/reactivity/production.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "development",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/development.js"
+          ],
+          "startedAt": 1789073479.7483516,
+          "wallSeconds": 9.971003770828247,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/development.js",
+          "sha256": "1285ac94306615aeb348f481ebe534a1c3ef96def8d320860b5b5620cc7ecc9b"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-reactivity-AiV1e9/production/src/reactivity/production.lil",
+            "--target",
+            "js-module",
+            "--mode",
+            "production",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/vuelil/config/reactivity-production.toml",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-reactivity-AiV1e9/production.js"
+          ],
+          "startedAt": 1789073489.745294,
+          "wallSeconds": 69.40717029571533,
+          "exitCode": 0,
+          "output": "/tmp/vuelil-reactivity-AiV1e9/production.js",
+          "sha256": "fe4152c8187f1901fd28133feaf9ed083c0bb6bac33e89a0682a0b5db28ac116"
+        },
+        {
+          "args": [
+            "/tmp/vuelil-runtime-core-Oe6k33/production/src/runtime-core/index.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/tests/config/no-optimization-no-peephole.toml",
+            "--jobs",
+            "1",
+            "--codec-jobs",
+            "1",
+            "-o",
+            "/tmp/vuelil-runtime-core-Oe6k33/production.js"
+          ],
+          "startedAt": 1789073559.6315255,
+          "wallSeconds": 0.6068837642669678,
+          "exitCode": 1
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "repetitions": 3,
+    "cleanOutputs": true,
+    "dependencyInstallationTimedSeparately": true,
+    "sourceArchives": "Pinned Git checkouts; original repository package build commands, followed by production ESM assembly.",
+    "workerUse": "Both implementations use the same machine and Node version. This shared build pool also runs unrelated jobs; timings are contextual wall times, with CPU time recorded separately."
+  },
+  "status": "lilscript-build-failed",
+  "esm": {
+    "source": {
+      "repository": "https://github.com/vuejs/core.git",
+      "commit": "d63616ca17de965ed32dcb449a4c5cd9982f15d2",
+      "package": "vue",
+      "version": "3.5.42",
+      "directory": "packages/vue"
+    },
+    "entry": "packages/vue/dist/vue.runtime.esm-bundler.js",
+    "scope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+    "external": [],
+    "samples": [
+      {
+        "bundleSeconds": 0.026747250999999993,
+        "wallSeconds": 1.003407357
+      },
+      {
+        "bundleSeconds": 0.019414584999999988,
+        "wallSeconds": 0.758935996
+      },
+      {
+        "bundleSeconds": 0.021633509999999887,
+        "wallSeconds": 0.8151677089999998
+      }
+    ],
+    "medianSeconds": 0.8151677089999998,
+    "toolchain": {
+      "esbuild": "0.28.1",
+      "terser": "5.51.2"
+    },
+    "artifacts": [
+      {
+        "path": "original.esm.js",
+        "raw": 192753,
+        "gzip9": 70881,
+        "brotli11": 61536,
+        "sha256": "7d6614d0a2fe9be3c1ab1e72e54360a86577eb4e829b8f966bf848382a60caef"
+      },
+      {
+        "path": "original.unminified.js",
+        "raw": 482744,
+        "gzip9": 113899,
+        "brotli11": 92120,
+        "sha256": "bee8c8407640aecad9b4d48b5442f15a12e9f158411c7ff4d6d8070278bbeb45"
+      },
+      {
+        "path": "original.terser-nomangle.js",
+        "raw": 319854,
+        "gzip9": 89850,
+        "brotli11": 75739,
+        "sha256": "47b303e53913c00beb894a8d07721f8b7189c48bd927f9fb317c39a2bcb7c314"
+      },
+      {
+        "path": "original.esbuild.js",
+        "raw": 194539,
+        "gzip9": 73245,
+        "brotli11": 63745,
+        "sha256": "25480d068b8b8ee23676b1ee1521804950eba210ab5f9dc2db16d8931b931da7"
+      },
+      {
+        "path": "original.oxc-mangle.js",
+        "raw": 190809,
+        "gzip9": 70418,
+        "brotli11": 61342,
+        "sha256": "4e46739a23a6b54985baa12f901068e58872df18c229125153e1796646e414c6"
+      },
+      {
+        "path": "original.oxc-nomangle.js",
+        "raw": 317149,
+        "gzip9": 89020,
+        "brotli11": 75295,
+        "sha256": "8d802cf92d9cd21d4aa20105e0bffe8794fb9603042ad76c70b84c6b1a080421"
+      }
+    ],
+    "inputs": [
+      "packages/shared/src/makeMap.ts",
+      "packages/shared/src/general.ts",
+      "packages/shared/src/patchFlags.ts",
+      "packages/shared/src/shapeFlags.ts",
+      "packages/shared/src/slotFlags.ts",
+      "packages/shared/src/globalsAllowList.ts",
+      "packages/shared/src/codeframe.ts",
+      "packages/shared/src/normalizeProp.ts",
+      "packages/shared/src/domTagConfig.ts",
+      "packages/shared/src/domAttrConfig.ts",
+      "packages/shared/src/escapeHtml.ts",
+      "packages/shared/src/looseEqual.ts",
+      "packages/shared/src/toDisplayString.ts",
+      "packages/shared/src/typeUtils.ts",
+      "packages/shared/src/cssVars.ts",
+      "packages/shared/src/index.ts",
+      "packages/reactivity/src/constants.ts",
+      "packages/reactivity/src/warning.ts",
+      "packages/reactivity/src/effectScope.ts",
+      "packages/reactivity/src/effect.ts",
+      "packages/reactivity/src/dep.ts",
+      "packages/reactivity/src/arrayInstrumentations.ts",
+      "packages/reactivity/src/baseHandlers.ts",
+      "packages/reactivity/src/collectionHandlers.ts",
+      "packages/reactivity/src/reactive.ts",
+      "packages/reactivity/src/ref.ts",
+      "packages/reactivity/src/computed.ts",
+      "packages/reactivity/src/watch.ts",
+      "packages/reactivity/src/index.ts",
+      "packages/runtime-core/src/warning.ts",
+      "packages/runtime-core/src/enums.ts",
+      "packages/runtime-core/src/errorHandling.ts",
+      "packages/runtime-core/src/scheduler.ts",
+      "packages/runtime-core/src/hmr.ts",
+      "packages/runtime-core/src/devtools.ts",
+      "packages/runtime-core/src/compat/compatConfig.ts",
+      "packages/runtime-core/src/compat/instanceEventEmitter.ts",
+      "packages/runtime-core/src/componentRenderContext.ts",
+      "packages/runtime-core/src/compat/customDirective.ts",
+      "packages/runtime-core/src/directives.ts",
+      "packages/runtime-core/src/apiInject.ts",
+      "packages/runtime-core/src/helpers/useSsrContext.ts",
+      "packages/runtime-core/src/apiWatch.ts",
+      "packages/runtime-core/src/components/Teleport.ts",
+      "packages/runtime-core/src/components/BaseTransition.ts",
+      "packages/runtime-core/src/apiDefineComponent.ts",
+      "packages/runtime-core/src/helpers/useId.ts",
+      "packages/runtime-core/src/helpers/useTemplateRef.ts",
+      "packages/runtime-core/src/rendererTemplateRef.ts",
+      "packages/runtime-core/src/hydration.ts",
+      "packages/runtime-core/src/hydrationStrategies.ts",
+      "packages/runtime-core/src/apiAsyncComponent.ts",
+      "packages/runtime-core/src/components/KeepAlive.ts",
+      "packages/runtime-core/src/apiLifecycle.ts",
+      "packages/runtime-core/src/compat/instanceChildren.ts",
+      "packages/runtime-core/src/compat/instanceListeners.ts",
+      "packages/runtime-core/src/helpers/resolveAssets.ts",
+      "packages/runtime-core/src/compat/renderFn.ts",
+      "packages/runtime-core/src/compat/componentFunctional.ts",
+      "packages/runtime-core/src/helpers/renderList.ts",
+      "packages/runtime-core/src/helpers/createSlots.ts",
+      "packages/runtime-core/src/helpers/renderSlot.ts",
+      "packages/runtime-core/src/helpers/toHandlers.ts",
+      "packages/runtime-core/src/compat/renderHelpers.ts",
+      "packages/runtime-core/src/compat/instance.ts",
+      "packages/runtime-core/src/componentPublicInstance.ts",
+      "packages/runtime-core/src/compat/data.ts",
+      "packages/runtime-core/src/apiSetupHelpers.ts",
+      "packages/runtime-core/src/componentOptions.ts",
+      "packages/runtime-core/src/compat/globalConfig.ts",
+      "packages/runtime-core/src/compat/global.ts",
+      "packages/runtime-core/src/apiCreateApp.ts",
+      "packages/runtime-core/src/compat/componentVModel.ts",
+      "packages/runtime-core/src/helpers/useModel.ts",
+      "packages/runtime-core/src/componentEmits.ts",
+      "packages/runtime-core/src/componentRenderUtils.ts",
+      "packages/runtime-core/src/compat/props.ts",
+      "packages/runtime-core/src/compat/attrsFallthrough.ts",
+      "packages/runtime-core/src/internalObject.ts",
+      "packages/runtime-core/src/componentProps.ts",
+      "packages/runtime-core/src/componentSlots.ts",
+      "packages/runtime-core/src/profiling.ts",
+      "packages/runtime-core/src/featureFlags.ts",
+      "packages/runtime-core/src/renderer.ts",
+      "packages/runtime-core/src/components/Suspense.ts",
+      "packages/runtime-core/src/compat/componentAsync.ts",
+      "packages/runtime-core/src/compat/component.ts",
+      "packages/runtime-core/src/vnode.ts",
+      "packages/runtime-core/src/component.ts",
+      "packages/runtime-core/src/apiComputed.ts",
+      "packages/runtime-core/src/h.ts",
+      "packages/runtime-core/src/customFormatter.ts",
+      "packages/runtime-core/src/helpers/withMemo.ts",
+      "packages/runtime-core/src/index.ts",
+      "packages/runtime-dom/src/nodeOps.ts",
+      "packages/runtime-dom/src/components/Transition.ts",
+      "packages/runtime-dom/src/modules/class.ts",
+      "packages/runtime-dom/src/directives/vShow.ts",
+      "packages/runtime-dom/src/helpers/useCssVars.ts",
+      "packages/runtime-dom/src/modules/style.ts",
+      "packages/runtime-dom/src/modules/attrs.ts",
+      "packages/runtime-dom/src/modules/props.ts",
+      "packages/runtime-dom/src/modules/events.ts",
+      "packages/runtime-dom/src/patchProp.ts",
+      "packages/runtime-dom/src/apiCustomElement.ts",
+      "packages/runtime-dom/src/helpers/useCssModule.ts",
+      "packages/runtime-dom/src/components/TransitionGroup.ts",
+      "packages/runtime-dom/src/directives/vModel.ts",
+      "packages/runtime-dom/src/directives/vOn.ts",
+      "packages/runtime-dom/src/jsx.ts",
+      "packages/runtime-dom/src/index.ts",
+      "packages/vue/dist/vue.runtime.esm-bundler.js",
+      "public-esm-entry.mjs"
+    ]
+  },
+  "nativeBuildsSummary": {
+    "samples": 3,
+    "successful": 3,
+    "medianSeconds": 2.3736771320000116,
+    "minimumSeconds": 2.3715565110005628,
+    "maximumSeconds": 2.420921945000373
+  },
+  "lilscriptBuildsSummary": {
+    "samples": 1,
+    "successful": 0,
+    "medianSeconds": null,
+    "minimumSeconds": null,
+    "maximumSeconds": null
+  },
+  "finishedAt": "2026-09-10T20:52:50Z"
+}

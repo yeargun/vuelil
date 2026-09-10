@@ -93,7 +93,7 @@ function pageHtml(scope, inventory, evidence) {
     .map((entry) => `<tr><td><code>${escapeHtml(entry.name)}</code></td><td>${entry.candidateBytes.toLocaleString()} B</td><td>${entry.upstreamBytes.toLocaleString()} B</td><td>+${(entry.candidateBytes - entry.upstreamBytes).toLocaleString()} B</td></tr>`)
     .join("\n");
   const headline = "Vue, through LilScript.";
-  const summary = "The Vue 3.5.42 API rewritten in LilScript. The full LilScript ESM build is incomplete; the original production ESM measures 41,531 B Brotli-11. Current source and compatibility coverage are listed below.";
+  const summary = "The Vue 3.5.42 API rewritten in LilScript. The full LilScript ESM build is incomplete; the original production ESM measures 61,536 B Brotli-11. Current source and compatibility coverage are listed below.";
 
   return `<!doctype html>
 <html lang="en">

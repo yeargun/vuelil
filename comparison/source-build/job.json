@@ -1,0 +1,44 @@
+{
+  "source": {
+    "repository": "https://github.com/vuejs/core.git",
+    "commit": "d63616ca17de965ed32dcb449a4c5cd9982f15d2",
+    "package": "vue",
+    "version": "3.5.42",
+    "directory": "packages/vue"
+  },
+  "portSource": {
+    "commit": "472d660aae51b000efc30aa3317acd20d43a2c9e"
+  },
+  "compilerCommit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
+  "install": [
+    "corepack",
+    "pnpm",
+    "install",
+    "--frozen-lockfile",
+    "--ignore-scripts"
+  ],
+  "setup": [],
+  "build": [
+    "bash",
+    "-c",
+    "corepack pnpm build --formats esm-bundler && corepack pnpm build vue --formats esm-bundler-runtime"
+  ],
+  "clean": [
+    "packages/vue/dist",
+    "packages/runtime-dom/dist",
+    "packages/runtime-core/dist",
+    "packages/shared/dist",
+    "packages/reactivity/dist",
+    "packages/compiler-core/dist",
+    "packages/compiler-dom/dist",
+    "packages/compiler-sfc/dist",
+    "packages/compiler-ssr/dist",
+    "packages/server-renderer/dist"
+  ],
+  "entry": "packages/vue/dist/vue.runtime.esm-bundler.js",
+  "defaultExport": false,
+  "external": [],
+  "esmScope": "vue@3.5.42 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+  "lilscriptBuild": "npm run build:shared && npm run build:reactivity && npm run build:runtime-core && npm run build:runtime-dom && npm run build:runtime-test && npm run build:compiler-core && npm run build:compiler-dom && npm run build:vue-compat && npm run build:compiler-ssr && npm run build:server-renderer && npm run build:vue && npm run build:compiler-sfc && npm run build:compatibility",
+  "test": "node --test tests/*.test.mjs"
+}
